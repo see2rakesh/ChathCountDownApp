@@ -6,7 +6,11 @@
       "android": { "buildType": "apk" }
     },
     "production": {
-      "android": { "buildType": "app-bundle" }
+      "android": { "buildType": "app-bundle" },
+      "env": {
+        "SONGS_URL": "https://see2rakesh.github.io/ChathCountDownApp/songs.json",
+        "SHARE_URL": "https://see2rakesh.github.io/ChathCountDownApp/"
+      }
     }
   }
 }
