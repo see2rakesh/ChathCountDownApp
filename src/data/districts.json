@@ -1,0 +1,268 @@
+[
+ {
+  "id": "araria",
+  "en": "Araria",
+  "hi": "अररिया",
+  "lat": 26.1493,
+  "lon": 87.5132
+ },
+ {
+  "id": "arwal",
+  "en": "Arwal",
+  "hi": "अरवल",
+  "lat": 25.2428,
+  "lon": 84.6657
+ },
+ {
+  "id": "aurangabad",
+  "en": "Aurangabad",
+  "hi": "औरंगाबाद",
+  "lat": 24.752,
+  "lon": 84.3742
+ },
+ {
+  "id": "banka",
+  "en": "Banka",
+  "hi": "बांका",
+  "lat": 24.8809,
+  "lon": 86.9226
+ },
+ {
+  "id": "begusarai",
+  "en": "Begusarai",
+  "hi": "बेगूसराय",
+  "lat": 25.4185,
+  "lon": 86.1339
+ },
+ {
+  "id": "bhagalpur",
+  "en": "Bhagalpur",
+  "hi": "भागलपुर",
+  "lat": 25.2445,
+  "lon": 86.9718
+ },
+ {
+  "id": "bhojpur",
+  "en": "Bhojpur (Arrah)",
+  "hi": "भोजपुर (आरा)",
+  "lat": 25.5563,
+  "lon": 84.6633
+ },
+ {
+  "id": "buxar",
+  "en": "Buxar",
+  "hi": "बक्सर",
+  "lat": 25.5755,
+  "lon": 83.9804
+ },
+ {
+  "id": "darbhanga",
+  "en": "Darbhanga",
+  "hi": "दरभंगा",
+  "lat": 26.1522,
+  "lon": 85.8971
+ },
+ {
+  "id": "east-champaran",
+  "en": "East Champaran (Motihari)",
+  "hi": "पूर्वी चंपारण (मोतिहारी)",
+  "lat": 26.65,
+  "lon": 84.9167
+ },
+ {
+  "id": "gaya",
+  "en": "Gaya",
+  "hi": "गया",
+  "lat": 24.7969,
+  "lon": 85.0038
+ },
+ {
+  "id": "gopalganj",
+  "en": "Gopalganj",
+  "hi": "गोपालगंज",
+  "lat": 26.4673,
+  "lon": 84.4404
+ },
+ {
+  "id": "jamui",
+  "en": "Jamui",
+  "hi": "जमुई",
+  "lat": 24.9261,
+  "lon": 86.2253
+ },
+ {
+  "id": "jehanabad",
+  "en": "Jehanabad",
+  "hi": "जहानाबाद",
+  "lat": 25.2137,
+  "lon": 84.9871
+ },
+ {
+  "id": "kaimur",
+  "en": "Kaimur (Bhabua)",
+  "hi": "कैमूर (भभुआ)",
+  "lat": 25.0405,
+  "lon": 83.6075
+ },
+ {
+  "id": "katihar",
+  "en": "Katihar",
+  "hi": "कटिहार",
+  "lat": 25.5385,
+  "lon": 87.5704
+ },
+ {
+  "id": "khagaria",
+  "en": "Khagaria",
+  "hi": "खगड़िया",
+  "lat": 25.5022,
+  "lon": 86.4671
+ },
+ {
+  "id": "kishanganj",
+  "en": "Kishanganj",
+  "hi": "किशनगंज",
+  "lat": 26.1022,
+  "lon": 87.9553
+ },
+ {
+  "id": "lakhisarai",
+  "en": "Lakhisarai",
+  "hi": "लखीसराय",
+  "lat": 25.1765,
+  "lon": 86.0947
+ },
+ {
+  "id": "madhepura",
+  "en": "Madhepura",
+  "hi": "मधेपुरा",
+  "lat": 25.9213,
+  "lon": 86.7927
+ },
+ {
+  "id": "madhubani",
+  "en": "Madhubani",
+  "hi": "मधुबनी",
+  "lat": 26.3537,
+  "lon": 86.0717
+ },
+ {
+  "id": "munger",
+  "en": "Munger",
+  "hi": "मुंगेर",
+  "lat": 25.3746,
+  "lon": 86.4746
+ },
+ {
+  "id": "muzaffarpur",
+  "en": "Muzaffarpur",
+  "hi": "मुजफ्फरपुर",
+  "lat": 26.1226,
+  "lon": 85.3906
+ },
+ {
+  "id": "nalanda",
+  "en": "Nalanda (Bihar Sharif)",
+  "hi": "नालंदा (बिहार शरीफ)",
+  "lat": 25.2008,
+  "lon": 85.5239
+ },
+ {
+  "id": "nawada",
+  "en": "Nawada",
+  "hi": "नवादा",
+  "lat": 24.8867,
+  "lon": 85.5436
+ },
+ {
+  "id": "patna",
+  "en": "Patna",
+  "hi": "पटना",
+  "lat": 25.5941,
+  "lon": 85.1356
+ },
+ {
+  "id": "purnia",
+  "en": "Purnia",
+  "hi": "पूर्णिया",
+  "lat": 25.7789,
+  "lon": 87.4742
+ },
+ {
+  "id": "rohtas",
+  "en": "Rohtas (Sasaram)",
+  "hi": "रोहतास (सासाराम)",
+  "lat": 24.9494,
+  "lon": 84.0165
+ },
+ {
+  "id": "saharsa",
+  "en": "Saharsa",
+  "hi": "सहरसा",
+  "lat": 25.875,
+  "lon": 86.5961
+ },
+ {
+  "id": "samastipur",
+  "en": "Samastipur",
+  "hi": "समस्तीपुर",
+  "lat": 25.8622,
+  "lon": 85.7795
+ },
+ {
+  "id": "saran",
+  "en": "Saran (Chhapra)",
+  "hi": "सारण (छपरा)",
+  "lat": 25.7803,
+  "lon": 84.7471
+ },
+ {
+  "id": "sheikhpura",
+  "en": "Sheikhpura",
+  "hi": "शेखपुरा",
+  "lat": 25.1399,
+  "lon": 85.841
+ },
+ {
+  "id": "sheohar",
+  "en": "Sheohar",
+  "hi": "शिवहर",
+  "lat": 26.5139,
+  "lon": 85.2934
+ },
+ {
+  "id": "sitamarhi",
+  "en": "Sitamarhi",
+  "hi": "सीतामढ़ी",
+  "lat": 26.5936,
+  "lon": 85.4906
+ },
+ {
+  "id": "siwan",
+  "en": "Siwan",
+  "hi": "सीवान",
+  "lat": 26.221,
+  "lon": 84.3561
+ },
+ {
+  "id": "supaul",
+  "en": "Supaul",
+  "hi": "सुपौल",
+  "lat": 26.1153,
+  "lon": 86.5951
+ },
+ {
+  "id": "vaishali",
+  "en": "Vaishali (Hajipur)",
+  "hi": "वैशाली (हाजीपुर)",
+  "lat": 25.6854,
+  "lon": 85.2098
+ },
+ {
+  "id": "west-champaran",
+  "en": "West Champaran (Bettiah)",
+  "hi": "पश्चिमी चंपारण (बेतिया)",
+  "lat": 26.8023,
+  "lon": 84.5031
+ }
+]

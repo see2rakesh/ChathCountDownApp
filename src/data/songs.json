@@ -1,0 +1,427 @@
+{
+ "version": 1,
+ "singer": "Sharda Sinha",
+ "updated": "2026-09-16",
+ "songs": [
+  {
+   "date": "2026-10-20",
+   "youtubeId": "JcCjw_P_gaM",
+   "title": {
+    "en": "Kartik Maas Ijoriya",
+    "hi": "कार्तिक मास इजोरिया"
+   },
+   "album": "Arag",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "song",
+   "note": {
+    "en": "A song for the bright fortnight of Kartik, the month in which Chhath falls.",
+    "hi": "कार्तिक के उजले पखवाड़े का गीत, जिस महीने में छठ आता है।"
+   }
+  },
+  {
+   "date": "2026-10-21",
+   "youtubeId": "x9_3sARy_Kw",
+   "title": {
+    "en": "Hey Chhathi Maiya",
+    "hi": "हे छठी मईया"
+   },
+   "album": "Chhathi Maiya",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "song",
+   "note": {
+    "en": "A direct prayer to Chhathi Maiya, the mother goddess of the festival.",
+    "hi": "छठी मईया से सीधी प्रार्थना।"
+   }
+  },
+  {
+   "date": "2026-10-22",
+   "youtubeId": "LAyzT5S3PkU",
+   "title": {
+    "en": "Nadiya Ke Teere Teere",
+    "hi": "नदिया के तीरे तीरे"
+   },
+   "album": "Arag",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "song",
+   "note": {
+    "en": "Devotees walking along the riverbank towards the ghat.",
+    "hi": "नदी किनारे घाट की ओर जाते व्रती।"
+   }
+  },
+  {
+   "date": "2026-10-23",
+   "youtubeId": "O4ARvvmllCA",
+   "title": {
+    "en": "Tohe Badka Bhaiya Ho",
+    "hi": "तोहे बड़का भईया हो"
+   },
+   "album": "Chhathi Maiya",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "song",
+   "note": {
+    "en": "A family song: the elder brother carries the offerings to the ghat.",
+    "hi": "परिवार का गीत: बड़े भाई प्रसाद लेकर घाट जाते हैं।"
+   }
+  },
+  {
+   "date": "2026-10-24",
+   "youtubeId": "YUR3_SdxImE",
+   "title": {
+    "en": "Kehan Samaiya Aele",
+    "hi": "केहन समइया अएले"
+   },
+   "album": "Arag",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "song",
+   "note": {
+    "en": "Joy that the season of Chhath has arrived again.",
+    "hi": "छठ का समय फिर आने की खुशी।"
+   }
+  },
+  {
+   "date": "2026-10-25",
+   "youtubeId": "uLbBmLb8wfg",
+   "title": {
+    "en": "Best of Sharda Sinha – Chhath Video Jukebox",
+    "hi": "बेस्ट ऑफ़ शारदा सिन्हा – छठ वीडियो ज्यूकबॉक्स"
+   },
+   "album": "Jukebox",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "jukebox",
+   "note": {
+    "en": "Sunday special: a collection of her best-loved Chhath videos.",
+    "hi": "रविवार विशेष: उनके सबसे प्रिय छठ गीतों का संग्रह।"
+   }
+  },
+  {
+   "date": "2026-10-26",
+   "youtubeId": "wJ7p79QWgLg",
+   "title": {
+    "en": "Ganga Ji Ke Paniyan",
+    "hi": "गंगा जी के पनियाँ"
+   },
+   "album": "Arag",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "song",
+   "note": {
+    "en": "The holy waters of the Ganga, where the arghya is offered.",
+    "hi": "गंगा जी का पवित्र जल, जहाँ अर्घ्य दिया जाता है।"
+   }
+  },
+  {
+   "date": "2026-10-27",
+   "youtubeId": "BC5I-33GNDA",
+   "title": {
+    "en": "Bartin Ke Angna Mein",
+    "hi": "बरतिन के अँगना में"
+   },
+   "album": "Sakal Jagtarni Hey Chhathi Maiya",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "song",
+   "note": {
+    "en": "The courtyard of the vrati's home, getting ready for the puja.",
+    "hi": "व्रती के आँगन में पूजा की तैयारी।"
+   }
+  },
+  {
+   "date": "2026-10-28",
+   "youtubeId": "MEnyozGodAU",
+   "title": {
+    "en": "Baanjhi Kewdwa Dhaile Thaadh",
+    "hi": "बाँझी केवड़वा धइले ठाढ़"
+   },
+   "album": "Mahima Chhathi Maiya Ke",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "song",
+   "note": {
+    "en": "A woman prays to Chhathi Maiya for the blessing of a child.",
+    "hi": "संतान की कामना से छठी मईया से प्रार्थना।"
+   }
+  },
+  {
+   "date": "2026-10-29",
+   "youtubeId": "4crylHhNXAM",
+   "title": {
+    "en": "Suraj Ke Rath Maiya",
+    "hi": "सूरज के रथ मईया"
+   },
+   "album": "Arag",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "song",
+   "note": {
+    "en": "The Sun God's chariot, welcomed with devotion.",
+    "hi": "सूर्य देव के रथ का भक्ति से स्वागत।"
+   }
+  },
+  {
+   "date": "2026-10-30",
+   "youtubeId": "Ki-SXeraDVc",
+   "title": {
+    "en": "Hey Chhathi Maiya (with lyrics)",
+    "hi": "हे छठी मईया (बोल सहित)"
+   },
+   "album": "Chhath Pooja Geet",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "song",
+   "note": {
+    "en": "The same prayer as a lyric video, so you can sing along.",
+    "hi": "वही प्रार्थना, बोल के साथ — साथ में गाइए।"
+   }
+  },
+  {
+   "date": "2026-10-31",
+   "youtubeId": "lbJEsdw8xHE",
+   "title": {
+    "en": "Sab Milke Aaj Bolo",
+    "hi": "सब मिलके आज बोलो"
+   },
+   "album": "Arag",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "song",
+   "note": {
+    "en": "A call for everyone to sing the Mother's praise together.",
+    "hi": "सब मिलकर माँ की जय बोलने का आह्वान।"
+   }
+  },
+  {
+   "date": "2026-11-01",
+   "youtubeId": "gDfLtZyeRCA",
+   "title": {
+    "en": "Sakal Jagtarini Hey Chhathi Maiya – Video Jukebox",
+    "hi": "सकल जगतारिणी हे छठी मईया – वीडियो ज्यूकबॉक्स"
+   },
+   "album": "Jukebox",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "jukebox",
+   "note": {
+    "en": "Sunday special: the full album as a video jukebox.",
+    "hi": "रविवार विशेष: पूरा एल्बम वीडियो ज्यूकबॉक्स में।"
+   }
+  },
+  {
+   "date": "2026-11-02",
+   "youtubeId": "ITgZ41cIApo",
+   "title": {
+    "en": "Hey Chhathi Maiya (Mahima)",
+    "hi": "हे छठी मईया (महिमा)"
+   },
+   "album": "Mahima Chhathi Maai Ke",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "song",
+   "note": {
+    "en": "Singing of the glory and mercy of Chhathi Maiya.",
+    "hi": "छठी मईया की महिमा और कृपा का गान।"
+   }
+  },
+  {
+   "date": "2026-11-03",
+   "youtubeId": "Y--BclhdHJk",
+   "title": {
+    "en": "Supawo Naa Mile Maai",
+    "hi": "सुपवो ना मिले माई"
+   },
+   "album": "Single",
+   "channel": "Worldwide Records Bhojpuri",
+   "kind": "song",
+   "note": {
+    "en": "A later composition about the soop, the bamboo winnowing tray used for the offerings.",
+    "hi": "सूप पर आधारित उनकी बाद की रचना — अर्घ्य की बाँस की टोकरी।"
+   }
+  },
+  {
+   "date": "2026-11-04",
+   "youtubeId": "29JynZfMoe4",
+   "title": {
+    "en": "Kelwa Ke Paat Par – Audio Jukebox",
+    "hi": "केलवा के पात पर – ऑडियो ज्यूकबॉक्स"
+   },
+   "album": "Jukebox",
+   "channel": "T-Series Hamaar Bhojpuri",
+   "kind": "jukebox",
+   "note": {
+    "en": "Audio collection built around her most famous Chhath song.",
+    "hi": "उनके सबसे प्रसिद्ध छठ गीत पर आधारित ऑडियो संग्रह।"
+   }
+  },
+  {
+   "date": "2026-11-05",
+   "youtubeId": "NkDiSj9c1EA",
+   "title": {
+    "en": "Dukhwa Mitayin Chhathi Maiya",
+    "hi": "दुखवा मिटाईं छठी मैया"
+   },
+   "album": "Single (2024)",
+   "channel": "Sharda Sinha Official",
+   "kind": "song",
+   "note": {
+    "en": "Tribute day: her last Chhath song, released in 2024. She passed away on 5 Nov 2024, during Chhath.",
+    "hi": "श्रद्धांजलि दिवस: 2024 में आया उनका अंतिम छठ गीत। 5 नवंबर 2024, छठ के दौरान ही उनका निधन हुआ।"
+   }
+  },
+  {
+   "date": "2026-11-06",
+   "youtubeId": "6DePUrUWtmE",
+   "title": {
+    "en": "Chhathi Maiya – Audio Jukebox",
+    "hi": "छठी मईया – ऑडियो ज्यूकबॉक्स"
+   },
+   "album": "Jukebox",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "jukebox",
+   "note": {
+    "en": "Full audio album of traditional Chhath songs.",
+    "hi": "पारंपरिक छठ गीतों का पूरा ऑडियो एल्बम।"
+   }
+  },
+  {
+   "date": "2026-11-07",
+   "youtubeId": "Kv_Urhtcrkg",
+   "title": {
+    "en": "Hey Chhathi Maiya (New Version)",
+    "hi": "हे छठी मईया (नया संस्करण)"
+   },
+   "album": "Chhath Pooja Geet",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "song",
+   "note": {
+    "en": "A newer video of her classic prayer.",
+    "hi": "उनकी प्रसिद्ध प्रार्थना का नया वीडियो।"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "youtubeId": "BsAFCc901MM",
+   "title": {
+    "en": "Chhath Puja Special – Chhathi Maiya",
+    "hi": "छठ पूजा स्पेशल – छठी मईया"
+   },
+   "album": "Chhath Pooja Geet",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "jukebox",
+   "note": {
+    "en": "Sunday special: festival collection.",
+    "hi": "रविवार विशेष: पर्व संग्रह।"
+   }
+  },
+  {
+   "date": "2026-11-09",
+   "youtubeId": "2KHYupToh2Q",
+   "title": {
+    "en": "Arag – Audio Jukebox",
+    "hi": "अरग – ऑडियो ज्यूकबॉक्स"
+   },
+   "album": "Jukebox",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "jukebox",
+   "note": {
+    "en": "The full Arag album: songs of the arghya offering.",
+    "hi": "पूरा 'अरग' एल्बम: अर्घ्य के गीत।"
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "youtubeId": "gh6cssL0dr8",
+   "title": {
+    "en": "Best of Sharda Sinha – Chhath Audio Jukebox",
+    "hi": "बेस्ट ऑफ़ शारदा सिन्हा – छठ ऑडियो ज्यूकबॉक्स"
+   },
+   "album": "Jukebox",
+   "channel": "T-Series Hamaar Bhojpuri",
+   "kind": "jukebox",
+   "note": {
+    "en": "Three days to go: her greatest Chhath songs in one place.",
+    "hi": "तीन दिन बाकी: उनके सबसे बड़े छठ गीत एक साथ।"
+   }
+  },
+  {
+   "date": "2026-11-11",
+   "youtubeId": "-iZAg4rKJsA",
+   "title": {
+    "en": "Ugli Kiraniyan Se",
+    "hi": "उगली किरनियाँ से"
+   },
+   "album": "Arag",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "song",
+   "note": {
+    "en": "The first rays of the rising sun.",
+    "hi": "उगते सूरज की पहली किरणें।"
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "youtubeId": "CqKat91cXWs",
+   "title": {
+    "en": "Ugihein Sooraj Gosaiyan Hey",
+    "hi": "उगिहें सूरज गोसइयाँ हे"
+   },
+   "album": "Chhathi Maiya",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "song",
+   "note": {
+    "en": "A prayer asking Surya Dev to rise.",
+    "hi": "सूर्य देव से उदित होने की प्रार्थना।"
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "youtubeId": "-mpGoG0nWPo",
+   "title": {
+    "en": "Kelwa Ke Paat Par",
+    "hi": "केलवा के पात पर"
+   },
+   "album": "Chhathi Maiya",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "song",
+   "note": {
+    "en": "Nahay Khay: the festival begins with the song that defines Chhath.",
+    "hi": "नहाय-खाय: पर्व की शुरुआत उस गीत से जो छठ की पहचान है।"
+   }
+  },
+  {
+   "date": "2026-11-14",
+   "youtubeId": "DG8F-csoRAQ",
+   "title": {
+    "en": "Pahile Pahil Chhathi Maiya",
+    "hi": "पहिले पहिल छठी मईया"
+   },
+   "album": "Single (2018)",
+   "channel": "Worldwide Records Bhojpuri",
+   "kind": "song",
+   "note": {
+    "en": "Kharna: a young woman keeps her first Chhath fast.",
+    "hi": "खरना: एक नई व्रती का पहला छठ।"
+   }
+  },
+  {
+   "date": "2026-11-15",
+   "youtubeId": "fOVGz9WFymU",
+   "title": {
+    "en": "Ho Deenanath",
+    "hi": "हो दीनानाथ"
+   },
+   "album": "Suroojdev Ke Arghiya",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "song",
+   "note": {
+    "en": "Sandhya Arghya: calling out to Deenanath, the Sun God, at dusk.",
+    "hi": "संध्या अर्घ्य: साँझ में दीनानाथ सूर्य देव को पुकार।"
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "youtubeId": "knZ8b5YnQiY",
+   "title": {
+    "en": "Kelwa Ke Paat Par (New Version)",
+    "hi": "केलवा के पात पर (नया संस्करण)"
+   },
+   "album": "Chhath Pooja Geet",
+   "channel": "T-Series Bhakti Sagar",
+   "kind": "song",
+   "note": {
+    "en": "Usha Arghya: 'the sun rises over the banana leaf' — the anchor song for the final dawn.",
+    "hi": "उषा अर्घ्य: 'केलवा के पात पर उगेलन सूरज मल' — अंतिम भोर का गीत।"
+   }
+  }
+ ]
+}
