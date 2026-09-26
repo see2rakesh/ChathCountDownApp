@@ -7,14 +7,15 @@ import { Body, Card, H1, H2, Screen, Small } from '@/components/ui';
 import { YouTubeVideo } from '@/components/youtube-player';
 import { useSettings } from '@/lib/settings';
 import { seriesBounds, songForDate, sortedSongs, useSongs, youtubeThumb, type Song } from '@/lib/songs';
-import { formatDate, istDateString } from '@/lib/time';
+import { getDistrict } from '@/lib/sun';
+import { formatDate, localDateString } from '@/lib/time';
 import { useNow } from '@/lib/use-now';
 
 export default function GeetScreen() {
   const { settings, t } = useSettings();
   const lang = settings.lang;
   const now = useNow(60_000);
-  const today = istDateString(now);
+  const today = localDateString(getDistrict(settings.districtId).tz, now);
   const file = useSongs();
   const { start } = seriesBounds(file);
   const todays = songForDate(file, today);

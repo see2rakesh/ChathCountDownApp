@@ -22,7 +22,11 @@
       },
       "permissions": [
         "android.permission.POST_NOTIFICATIONS",
-        "android.permission.SCHEDULE_EXACT_ALARM"
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ],
+      "blockedPermissions": [
+        "android.permission.ACCESS_FINE_LOCATION"
       ],
       "predictiveBackGestureEnabled": false
     },
@@ -46,6 +50,12 @@
         }
       ],
       [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Your approximate location is used only on your phone to pick your district for sunrise and sunset times."
+        }
+      ],
+      [
         "expo-notifications",
         {
           "color": "#D9480F"
@@ -57,7 +67,7 @@
       "reactCompiler": true,
       "baseUrl": "/ChathCountDownApp"
     },
-    "description": "Chhath Mahaparv 2026 countdown, district-wise arghya timings for Bihar and a daily Sharda Sinha Chhath geet.",
+    "description": "Chhath Mahaparv 2026 countdown, arghya timings for every district in India and cities worldwide and a daily Sharda Sinha Chhath geet.",
     "backgroundColor": "#FFF7EC",
     "primaryColor": "#D9480F",
     "extra": {

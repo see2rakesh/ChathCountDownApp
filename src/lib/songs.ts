@@ -1,10 +1,8 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import Constants from 'expo-constants';
 import { useEffect, useState } from 'react';
-import { Platform } from 'react-native';
 
 import bundled from '@/data/songs.json';
-import { SONGS_URL } from './config';
+import { remoteFileUrl } from './config';
 import type { Lang } from './i18n';
 import { daysBetween } from './time';
 
@@ -32,14 +30,6 @@ function isValid(f: unknown): f is SongFile {
   return Array.isArray(s) && s.length > 0 && s.every((x) => typeof x.youtubeId === 'string' && typeof x.date === 'string');
 }
 
-function remoteUrl(): string {
-  if (Platform.OS === 'web') {
-    const base = (Constants.expoConfig?.experiments as { baseUrl?: string } | undefined)?.baseUrl ?? '';
-    return `${base}/songs.json`;
-  }
-  return SONGS_URL;
-}
-
 /** Bundled songs first, then a cached copy, then the latest remote copy (so a broken video can be swapped by editing songs.json online). */
 export function useSongs(): SongFile {
   const [file, setFile] = useState<SongFile>(bundled as SongFile);
@@ -54,7 +44,7 @@ export function useSongs(): SongFile {
           if (alive && isValid(parsed) && parsed.updated >= (bundled as SongFile).updated) setFile(parsed);
         }
       } catch {}
-      const url = remoteUrl();
+      const url = remoteFileUrl('songs.json');
       if (!url) return;
       try {
         const res = await fetch(url, { cache: 'no-store' });

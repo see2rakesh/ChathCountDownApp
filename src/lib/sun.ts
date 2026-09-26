@@ -1,18 +1,38 @@
 import { getTimes } from 'suncalc';
 
-import districtsData from '@/data/districts.json';
+import placesData from '@/data/places.json';
 import { EDITIONS, type FestivalEdition, type Ritual } from '@/data/festival';
-import { istInstant, istNoon } from './time';
+import { addDays, IST, localInstant, localNoon } from './time';
 
+/** A district HQ or a big city: the place whose sunrise and sunset the app shows. */
 export interface District {
   id: string;
   en: string;
   hi: string;
   lat: number;
   lon: number;
+  state: string;
+  kind: 'district' | 'city';
+  /** IANA time zone, e.g. Asia/Kolkata. */
+  tz: string;
 }
 
-export const DISTRICTS: District[] = districtsData as District[];
+export interface Region {
+  id: string;
+  en: string;
+  hi: string;
+}
+
+export interface State extends Region {
+  country: string;
+}
+
+export const COUNTRIES: Region[] = placesData.countries;
+export const STATES: State[] = placesData.states;
+export const DISTRICTS: District[] = placesData.places as District[];
+export const getState = (id: string): State | undefined => STATES.find((s) => s.id === id);
+export const getCountry = (id: string): Region | undefined => COUNTRIES.find((c) => c.id === id);
+export const countryOf = (d: District): string => getState(d.state)?.country ?? 'in';
 export const DEFAULT_DISTRICT = 'patna';
 
 export function getDistrict(id: string): District {
@@ -31,7 +51,7 @@ export function sunTimes(date: string, d: District): SunTimes {
   const k = `${date}|${d.id}`;
   const hit = cache.get(k);
   if (hit) return hit;
-  const t = getTimes(istNoon(date), d.lat, d.lon);
+  const t = getTimes(localNoon(d.tz, date), d.lat, d.lon);
   const v = { sunrise: t.sunrise as Date, sunset: t.sunset as Date };
   cache.set(k, v);
   return v;
@@ -43,10 +63,10 @@ export function ritualInstant(r: Ritual, d: District): Date {
   return r.anchor === 'sunrise' ? t.sunrise : t.sunset;
 }
 
-/** When the whole edition is over (end of Usha Arghya day). */
+/** When the whole edition is over: the day after Usha Arghya (noon IST), so places west of India (the Americas) are covered too. */
 export function editionEnd(e: FestivalEdition): Date {
   const last = e.rituals[e.rituals.length - 1];
-  return istInstant(last.date, 12, 0);
+  return localInstant(IST, addDays(last.date, 1), 12, 0);
 }
 
 /** The edition to show: the first one that has not ended yet, else the latest. */

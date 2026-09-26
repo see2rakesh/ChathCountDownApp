@@ -10,7 +10,7 @@ import { Body, Card, H2, Screen, Small } from '@/components/ui';
 import { useSettings } from '@/lib/settings';
 import { songForDate, useSongs, youtubeThumb } from '@/lib/songs';
 import { currentEdition, getDistrict, nextRitual, sunTimes } from '@/lib/sun';
-import { formatDate, formatDayMonth, formatTime, istDateString } from '@/lib/time';
+import { formatDate, formatDayMonth, formatTime, localDateString } from '@/lib/time';
 import { useNow } from '@/lib/use-now';
 
 export default function HomeScreen() {
@@ -18,8 +18,8 @@ export default function HomeScreen() {
   const lang = settings.lang;
   const router = useRouter();
   const now = useNow();
-  const today = istDateString(now);
   const district = getDistrict(settings.districtId);
+  const today = localDateString(district.tz, now);
   const edition = currentEdition(now);
   const next = nextRitual(edition, district, now);
   const todaySun = sunTimes(today, district);
@@ -46,7 +46,7 @@ export default function HomeScreen() {
               <Text style={styles.nextName}>{next.ritual.name[lang]}</Text>
               <Text style={styles.nextWhen}>
                 {formatDate(next.ritual.date, lang)} · {next.ritual.anchor === 'sunrise' ? t('sunrise') : t('sunset')}{' '}
-                {formatTime(next.at)} ({district[lang]})
+                {formatTime(next.at, district.tz)} ({district[lang]})
               </Text>
             </View>
             <Countdown ms={next.at.getTime() - now} />
@@ -84,7 +84,7 @@ export default function HomeScreen() {
           <Small>
             {t('today')} · {t('sunrise')}
           </Small>
-          <Text style={styles.sunTime}>{formatTime(todaySun.sunrise)}</Text>
+          <Text style={styles.sunTime}>{formatTime(todaySun.sunrise, district.tz)}</Text>
         </View>
         <View style={styles.sunDivider} />
         <View style={styles.sunCol}>
@@ -92,9 +92,20 @@ export default function HomeScreen() {
           <Small>
             {t('today')} · {t('sunset')}
           </Small>
-          <Text style={styles.sunTime}>{formatTime(todaySun.sunset)}</Text>
+          <Text style={styles.sunTime}>{formatTime(todaySun.sunset, district.tz)}</Text>
         </View>
       </Card>
+
+      <Pressable accessibilityRole="button" onPress={() => router.push('/live')}>
+        <Card style={styles.liveCard}>
+          <Text style={styles.liveIcon}>📡</Text>
+          <View style={{ flex: 1, gap: 2 }}>
+            <H2>{t('liveCardTitle')}</H2>
+            <Small>{t('liveCardSub')}</Small>
+          </View>
+          <Text style={styles.link}>→</Text>
+        </Card>
+      </Pressable>
 
       <Pressable accessibilityRole="button" onPress={() => router.push('/geet')}>
         <Card>
@@ -150,4 +161,6 @@ const styles = StyleSheet.create({
   thumb: { width: 120, height: 90, borderRadius: R.sm, backgroundColor: '#000' },
   songTitle: { fontSize: 16, fontWeight: '800', color: C.text },
   link: { color: C.primary, fontWeight: '800', marginTop: S.xs },
+  liveCard: { flexDirection: 'row', alignItems: 'center', gap: S.md },
+  liveIcon: { fontSize: 30 },
 });

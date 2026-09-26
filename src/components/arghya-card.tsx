@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import type { Ritual } from '@/data/festival';
 import { useSettings } from '@/lib/settings';
 import { getDistrict, ritualInstant } from '@/lib/sun';
-import { formatDate, formatTime, formatTimeSeconds } from '@/lib/time';
+import { formatDate, formatTime, formatTimeSeconds, zoneLabel } from '@/lib/time';
 import { useNow } from '@/lib/use-now';
 import { Countdown } from './countdown';
 import { C, R, S } from './theme';
@@ -32,8 +32,10 @@ export function ArghyaCard({ ritual }: { ritual: Ritual }) {
       </View>
       <View style={styles.timeRow}>
         <Text style={styles.timeLabel}>{isSunset ? t('sunsetOn') : t('sunriseOn')}</Text>
-        <Text style={styles.time}>{formatTime(at)}</Text>
-        <Text style={styles.exact}>{formatTimeSeconds(at)} IST</Text>
+        <Text style={styles.time}>{formatTime(at, district.tz)}</Text>
+        <Text style={styles.exact}>
+          {formatTimeSeconds(at, district.tz)} {zoneLabel(district.tz, at)}
+        </Text>
       </View>
       {left > 0 ? (
         <>

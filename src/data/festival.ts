@@ -118,22 +118,50 @@ export const EDITIONS: FestivalEdition[] = [
   },
 ];
 
-export const SAMAGRI: { id: string; name: L }[] = [
-  { id: 'soop', name: { en: 'Soop (bamboo winnowing tray)', hi: 'सूप (बाँस का)' } },
-  { id: 'daura', name: { en: 'Daura (bamboo basket)', hi: 'दउरा (बाँस की टोकरी)' } },
-  { id: 'thekua', name: { en: 'Thekua (wheat flour, gur, ghee)', hi: 'ठेकुआ (आटा, गुड़, घी)' } },
-  { id: 'sugarcane', name: { en: 'Sugarcane with leaves', hi: 'पत्तों वाला गन्ना' } },
-  { id: 'coconut', name: { en: 'Coconut (with husk)', hi: 'जटा वाला नारियल' } },
-  { id: 'banana', name: { en: 'Bunch of bananas', hi: 'केले का घौद' } },
-  { id: 'fruits', name: { en: 'Seasonal fruits (orange, sweet lime, sharifa)', hi: 'मौसमी फल (संतरा, मौसमी, शरीफ़ा)' } },
-  { id: 'suthni', name: { en: 'Suthni, shakarkand, singhara', hi: 'सुथनी, शकरकंद, सिंघाड़ा' } },
-  { id: 'haldi', name: { en: 'Fresh turmeric and ginger plants', hi: 'हल्दी और अदरक के पौधे' } },
-  { id: 'nimbu', name: { en: 'Big lemon (gagal)', hi: 'बड़ा नींबू (गागल)' } },
-  { id: 'lota', name: { en: 'Brass/copper lota for arghya', hi: 'अर्घ्य के लिए पीतल/ताँबे का लोटा' } },
-  { id: 'milk', name: { en: 'Raw milk', hi: 'कच्चा दूध' } },
-  { id: 'diya', name: { en: 'Diyas, ghee and cotton wicks', hi: 'दीये, घी और बाती' } },
-  { id: 'sindoor', name: { en: 'Sindoor, roli, akshat', hi: 'सिंदूर, रोली, अक्षत' } },
-  { id: 'clothes', name: { en: 'New clothes for the vrati', hi: 'व्रती के लिए नए वस्त्र' } },
+/** Default number of soops for a new checklist. */
+export const DEFAULT_SOOPS = 5;
+
+export type ShopId = 'mandi' | 'bamboo' | 'kirana' | 'puja' | 'dairy' | 'bartan' | 'kapda' | 'other';
+
+/** Where each item is usually bought. Order here is the order shown on the Samagri tab. */
+export const SHOPS: { id: ShopId; icon: string; name: L }[] = [
+  { id: 'mandi', icon: '🍌', name: { en: 'Fruit & vegetable market', hi: 'सब्ज़ी-फल मंडी' } },
+  { id: 'bamboo', icon: '🧺', name: { en: 'Soop-daura (bamboo) seller', hi: 'सूप-दउरा वाले' } },
+  { id: 'kirana', icon: '🛒', name: { en: 'Grocery (kirana)', hi: 'किराना दुकान' } },
+  { id: 'puja', icon: '🪔', name: { en: 'Puja samagri shop', hi: 'पूजा सामग्री दुकान' } },
+  { id: 'dairy', icon: '🥛', name: { en: 'Milk & dairy', hi: 'दूध-डेयरी' } },
+  { id: 'bartan', icon: '🏺', name: { en: 'Utensils shop', hi: 'बर्तन दुकान' } },
+  { id: 'kapda', icon: '👗', name: { en: 'Clothes shop', hi: 'कपड़े की दुकान' } },
+  { id: 'other', icon: '📦', name: { en: 'Other', hi: 'अन्य' } },
+];
+
+/**
+ * Default checklist. Keep ids stable: saved ticks and hidden items refer to them.
+ * `perSoop` items show "× N" using the number of soops in the user's profile.
+ */
+export const SAMAGRI: { id: string; shop: ShopId; name: L; perSoop?: boolean }[] = [
+  { id: 'soop', shop: 'bamboo', perSoop: true, name: { en: 'Soop (bamboo winnowing tray)', hi: 'सूप (बाँस का)' } },
+  { id: 'daura', shop: 'bamboo', name: { en: 'Daura (bamboo basket)', hi: 'दउरा (बाँस की टोकरी)' } },
+  { id: 'sugarcane', shop: 'mandi', name: { en: 'Sugarcane with leaves', hi: 'पत्तों वाला गन्ना' } },
+  { id: 'coconut', shop: 'mandi', perSoop: true, name: { en: 'Coconut (with husk)', hi: 'जटा वाला नारियल' } },
+  { id: 'banana', shop: 'mandi', perSoop: true, name: { en: 'Bunch of bananas', hi: 'केले का घौद' } },
+  { id: 'fruits', shop: 'mandi', name: { en: 'Seasonal fruits (orange, sweet lime, sharifa)', hi: 'मौसमी फल (संतरा, मौसमी, शरीफ़ा)' } },
+  { id: 'suthni', shop: 'mandi', name: { en: 'Suthni, shakarkand, singhara', hi: 'सुथनी, शकरकंद, सिंघाड़ा' } },
+  { id: 'haldi', shop: 'mandi', name: { en: 'Fresh turmeric and ginger plants', hi: 'हल्दी और अदरक के पौधे' } },
+  { id: 'nimbu', shop: 'mandi', name: { en: 'Big lemon (gagal)', hi: 'बड़ा नींबू (गागल)' } },
+  { id: 'lauki', shop: 'mandi', name: { en: 'Lauki (bottle gourd) for kaddu-bhat', hi: 'लौकी (कद्दू-भात के लिए)' } },
+  { id: 'atta', shop: 'kirana', name: { en: 'Wheat flour (for thekua)', hi: 'गेहूँ का आटा (ठेकुआ के लिए)' } },
+  { id: 'gur', shop: 'kirana', name: { en: 'Jaggery (gur)', hi: 'गुड़' } },
+  { id: 'ghee', shop: 'kirana', name: { en: 'Pure ghee', hi: 'शुद्ध घी' } },
+  { id: 'rice', shop: 'kirana', name: { en: 'Arwa rice (for kheer)', hi: 'अरवा चावल (खीर के लिए)' } },
+  { id: 'chanadal', shop: 'kirana', name: { en: 'Chana dal', hi: 'चने की दाल' } },
+  { id: 'diya', shop: 'puja', name: { en: 'Diyas and cotton wicks', hi: 'दीये और बाती' } },
+  { id: 'sindoor', shop: 'puja', name: { en: 'Sindoor, roli, akshat', hi: 'सिंदूर, रोली, अक्षत' } },
+  { id: 'dhoop', shop: 'puja', name: { en: 'Dhoop and agarbatti', hi: 'धूप और अगरबत्ती' } },
+  { id: 'milk', shop: 'dairy', name: { en: 'Raw milk', hi: 'कच्चा दूध' } },
+  { id: 'lota', shop: 'bartan', name: { en: 'Brass/copper lota for arghya', hi: 'अर्घ्य के लिए पीतल/ताँबे का लोटा' } },
+  { id: 'clothes', shop: 'kapda', name: { en: 'New clothes for the vrati', hi: 'व्रती के लिए नए वस्त्र' } },
+  { id: 'chulha', shop: 'other', name: { en: 'Clay stove and mango wood', hi: 'मिट्टी का चूल्हा और आम की लकड़ी' } },
 ];
 
 export const SINGERS: { name: L; note: L }[] = [

@@ -3,7 +3,7 @@ import { Platform } from 'react-native';
 
 import { currentEdition, getDistrict, sunTimes } from './sun';
 import { translate, type Lang } from './i18n';
-import { istInstant } from './time';
+import { localInstant } from './time';
 
 export const NOTIFICATIONS_SUPPORTED = true;
 
@@ -66,11 +66,11 @@ export async function rescheduleAll(o: Opts): Promise<void> {
       let body: string;
       switch (r.key) {
         case 'nahayKhay':
-          at = istInstant(r.date, 5, 0);
+          at = localInstant(d.tz, r.date, 5, 0);
           body = hi ? 'आज नहाय-खाय है। छठ महापर्व की शुरुआत।' : 'Today is Nahay Khay. Chhath Mahaparv begins.';
           break;
         case 'kharna':
-          at = istInstant(r.date, 16, 0);
+          at = localInstant(d.tz, r.date, 16, 0);
           body = hi ? 'आज शाम खरना का प्रसाद।' : 'Kharna prasad this evening.';
           break;
         case 'sandhyaArghya':

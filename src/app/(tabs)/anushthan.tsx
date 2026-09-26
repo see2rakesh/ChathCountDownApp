@@ -6,17 +6,17 @@ import { DistrictPicker } from '@/components/district-picker';
 import { C, R, S } from '@/components/theme';
 import { Body, Card, H1, H2, Screen, Small } from '@/components/ui';
 import { useSettings } from '@/lib/settings';
-import { currentEdition, DISTRICTS, getDistrict, sunTimes } from '@/lib/sun';
-import { formatDate, formatDayMonth, formatTime, istDateString } from '@/lib/time';
+import { countryOf, currentEdition, DISTRICTS, getDistrict, getState, sunTimes } from '@/lib/sun';
+import { formatDate, formatDayMonth, formatTime, localDateString } from '@/lib/time';
 import { useNow } from '@/lib/use-now';
 
 export default function RitualsScreen() {
   const { settings, t } = useSettings();
   const lang = settings.lang;
   const now = useNow(60_000);
-  const today = istDateString(now);
   const edition = currentEdition(now);
   const district = getDistrict(settings.districtId);
+  const today = localDateString(district.tz, now);
   const [showAll, setShowAll] = useState(false);
   const sandhya = edition.rituals.find((r) => r.key === 'sandhyaArghya')!;
   const usha = edition.rituals.find((r) => r.key === 'ushaArghya')!;
@@ -54,10 +54,10 @@ export default function RitualsScreen() {
             </View>
             <View style={styles.sunRow}>
               <Text style={styles.sunPill}>
-                🌅 {t('sunrise')} {formatTime(sun.sunrise)}
+                🌅 {t('sunrise')} {formatTime(sun.sunrise, district.tz)}
               </Text>
               <Text style={styles.sunPill}>
-                🌇 {t('sunset')} {formatTime(sun.sunset)}
+                🌇 {t('sunset')} {formatTime(sun.sunset, district.tz)}
               </Text>
             </View>
             <Body>{r.summary[lang]}</Body>
@@ -76,7 +76,9 @@ export default function RitualsScreen() {
 
       <Card>
         <Pressable accessibilityRole="button" onPress={() => setShowAll((v) => !v)} style={styles.allHead}>
-          <H2>{t('allDistricts')}</H2>
+          <H2 style={{ flex: 1 }}>
+            {district.kind === 'city' && countryOf(district) !== 'in' ? t('allCities') : t('allDistricts')} {getState(district.state)?.[lang]}
+          </H2>
           <Text style={styles.link}>{showAll ? t('hideAll') : t('showAll')}</Text>
         </Pressable>
         {showAll && (
@@ -90,15 +92,15 @@ export default function RitualsScreen() {
                 🌅 {formatDayMonth(usha.date, lang)}
               </Text>
             </View>
-            {[...DISTRICTS]
+            {DISTRICTS.filter((d) => d.state === district.state && (countryOf(district) !== 'in' || d.kind === 'district'))
               .sort((a, b) => a[lang].localeCompare(b[lang]))
               .map((d) => (
                 <View key={d.id} style={[styles.tr, d.id === district.id && { backgroundColor: C.surfaceWarm }]}>
                   <Text style={[styles.td, styles.tdName]} numberOfLines={2}>
                     {d[lang]}
                   </Text>
-                  <Text style={styles.td}>{formatTime(sunTimes(sandhya.date, d).sunset)}</Text>
-                  <Text style={styles.td}>{formatTime(sunTimes(usha.date, d).sunrise)}</Text>
+                  <Text style={styles.td}>{formatTime(sunTimes(sandhya.date, d).sunset, d.tz)}</Text>
+                  <Text style={styles.td}>{formatTime(sunTimes(usha.date, d).sunrise, d.tz)}</Text>
                 </View>
               ))}
           </View>

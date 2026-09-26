@@ -82,7 +82,7 @@ Add a new edition to `EDITIONS` in `src/data/festival.ts` (dates and sunrise/sun
 
 ## How the arghya times are calculated
 
-- Sunrise and sunset are computed on the device with [suncalc](https://github.com/mourner/suncalc): standard −0.833° refraction, district headquarters coordinates (`src/data/districts.json`, GeoNames).
+- Sunrise and sunset are computed on the device with [suncalc](https://github.com/mourner/suncalc): standard −0.833° refraction, coordinates from `src/data/places.json`: every district of India (Bihar hand-checked) and Nepal, plus cities in 22 countries with large Indian communities (Gulf, US, UK, Canada, Australia, Mauritius, Fiji, Trinidad, Suriname and others), from GeoNames. Each place has its time zone; `src/data/timezones.json` holds UTC offsets and DST changes for 2026–2028, so times are right without relying on the phone's time-zone support. Regenerate both with `node scripts/build-places.mjs <geonames-folder>` (see the script header), and extend the table before adding a festival year after 2028.
 - For Patna on 15 Nov 2026 the app shows sunset **5:01 PM**. The NOAA algorithm (astral) gives 17:00:44 against the app's 17:00:59. Published panchang tables show 5:01–5:03 PM.
 - The app tells users to reach the ghat early.
 
