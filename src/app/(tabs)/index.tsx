@@ -96,6 +96,17 @@ export default function HomeScreen() {
         </View>
       </Card>
 
+      <Pressable accessibilityRole="button" onPress={() => router.push('/katha')}>
+        <Card style={styles.liveCard}>
+          <Text style={styles.liveIcon}>📖</Text>
+          <View style={{ flex: 1, gap: 2 }}>
+            <H2>{t('kathaTitle')}</H2>
+            <Small>{t('kathaCardSub')}</Small>
+          </View>
+          <Text style={styles.link}>→</Text>
+        </Card>
+      </Pressable>
+
       <Pressable accessibilityRole="button" onPress={() => router.push('/live')}>
         <Card style={styles.liveCard}>
           <Text style={styles.liveIcon}>📡</Text>

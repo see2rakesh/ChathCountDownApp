@@ -1,4 +1,4 @@
-// Copies songs.json and live.json into public/ and writes the PWA manifest + service worker for the configured baseUrl.
+// Copies songs.json, live.json and playlist.json into public/ and writes the PWA manifest + service worker for the configured baseUrl.
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 
 const app = JSON.parse(readFileSync('app.json', 'utf8')).expo;
@@ -7,6 +7,7 @@ mkdirSync('public', { recursive: true });
 
 writeFileSync('public/songs.json', readFileSync('src/data/songs.json'));
 writeFileSync('public/live.json', readFileSync('src/data/live.json'));
+writeFileSync('public/playlist.json', readFileSync('src/data/playlist.json'));
 
 const manifest = {
   name: 'Chhath Countdown · छठ काउंटडाउन',

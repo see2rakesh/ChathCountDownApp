@@ -1,13 +1,13 @@
-import type { ReactNode } from 'react';
+import type { ReactNode, RefObject } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View, type StyleProp, type TextStyle, type ViewStyle } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { C, MAX_W, R, S } from './theme';
 
-export function Screen({ children }: { children: ReactNode }) {
+export function Screen({ children, scrollRef }: { children: ReactNode; scrollRef?: RefObject<ScrollView | null> }) {
   const insets = useSafeAreaInsets();
   return (
-    <ScrollView style={styles.screen} contentContainerStyle={[styles.content, { paddingBottom: insets.bottom + S.xxl }]}>
+    <ScrollView ref={scrollRef} style={styles.screen} contentContainerStyle={[styles.content, { paddingBottom: insets.bottom + S.xxl }]}>
       <View style={styles.inner}>{children}</View>
     </ScrollView>
   );

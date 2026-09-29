@@ -1,9 +1,6 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useEffect, useState } from 'react';
-
 import bundled from '@/data/live.json';
-import { remoteFileUrl } from './config';
 import type { Lang } from './i18n';
+import { useRemoteJson } from './remote';
 
 export interface LiveLink {
   title: Record<Lang, string>;
@@ -17,44 +14,14 @@ export interface LiveFile {
   links: LiveLink[];
 }
 
-const CACHE_KEY = 'live-cache-v1';
-
 function isValid(f: unknown): f is LiveFile {
   const l = (f as LiveFile)?.links;
   return Array.isArray(l) && l.every((x) => typeof x.url === 'string' && x.url.startsWith('https://') && typeof x.title?.en === 'string');
 }
 
-/** Ghat live-stream links: bundled list, then cached, then the latest live.json from the website (edit it during Chhath, no app update needed). */
+/** Ghat live-stream links from live.json (edit it on the website during Chhath, no app update needed). */
 export function useLiveLinks(): LiveLink[] {
-  const [links, setLinks] = useState<LiveLink[]>((bundled as LiveFile).links);
-
-  useEffect(() => {
-    let alive = true;
-    (async () => {
-      try {
-        const cached = await AsyncStorage.getItem(CACHE_KEY);
-        if (cached) {
-          const parsed = JSON.parse(cached);
-          if (alive && isValid(parsed)) setLinks(parsed.links);
-        }
-      } catch {}
-      const url = remoteFileUrl('live.json');
-      if (!url) return;
-      try {
-        const res = await fetch(url, { cache: 'no-store' });
-        if (!res.ok) return;
-        const json = await res.json();
-        if (!isValid(json)) return;
-        if (alive) setLinks(json.links);
-        await AsyncStorage.setItem(CACHE_KEY, JSON.stringify(json));
-      } catch {}
-    })();
-    return () => {
-      alive = false;
-    };
-  }, []);
-
-  return links;
+  return useRemoteJson('live.json', bundled as LiveFile, isValid).links;
 }
 
 export const YOUTUBE_LIVE_SEARCH = 'https://www.youtube.com/results?search_query=chhath+puja+live&sp=EgJAAQ%3D%3D';

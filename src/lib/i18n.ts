@@ -87,6 +87,22 @@ const STRINGS = {
   preview: { en: 'Preview', hi: 'झलक' },
   jukebox: { en: 'Jukebox', hi: 'ज्यूकबॉक्स' },
   tributeTitle: { en: 'Sharda Sinha', hi: 'शारदा सिन्हा' },
+  playlist: { en: 'Chhath geet playlist', hi: 'छठ गीत प्लेलिस्ट' },
+  playlistSub: {
+    en: 'Traditional Chhath songs by beloved voices. Tap a song to play it at the top.',
+    hi: 'प्रिय आवाज़ों में पारंपरिक छठ गीत। गीत दबाएँ, ऊपर चलने लगेगा।',
+  },
+  allSingers: { en: 'All singers', hi: 'सभी गायक' },
+  playlistRights: {
+    en: "Every song plays from the official YouTube channel of its label or artist (T-Series, Maithili Thakur, Chandan Tiwari's Purabiyataan and others) using YouTube's own player. No songs, lyrics or photos are stored in the app, and all rights stay with their owners.",
+    hi: 'हर गीत अपने लेबल या कलाकार के आधिकारिक YouTube चैनल (टी-सीरीज़, मैथिली ठाकुर, चंदन तिवारी का पुरबियातान आदि) से YouTube के अपने प्लेयर में चलता है। ऐप में कोई गीत, बोल या फ़ोटो नहीं रखे गए हैं, और सभी अधिकार उनके स्वामियों के हैं।',
+  },
+  kathaTitle: { en: 'The story of Chhath', hi: 'छठ की कथा' },
+  kathaCardSub: {
+    en: 'History, meaning, the legends of how it began, and where it is celebrated',
+    hi: 'इतिहास, महत्व, शुरुआत की कथाएँ और कहाँ मनाया जाता है',
+  },
+  kathaLink: { en: 'History & legends', hi: 'इतिहास और कथाएँ' },
   tributeSub: { en: 'Bihar Kokila (1952–2024)', hi: 'बिहार कोकिला (1952–2024)' },
   alsoLoved: { en: 'Other beloved Chhath voices', hi: 'छठ की अन्य प्रिय आवाज़ें' },
   samagriTitle: { en: 'Puja samagri checklist', hi: 'पूजा सामग्री सूची' },

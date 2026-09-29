@@ -1,0 +1,42 @@
+{
+ "updated": "2026-09-29",
+ "singers": [
+  { "id": "sharda", "name": { "en": "Sharda Sinha", "hi": "शारदा सिन्हा" } },
+  { "id": "anuradha", "name": { "en": "Anuradha Paudwal", "hi": "अनुराधा पौडवाल" } },
+  { "id": "maithili", "name": { "en": "Maithili Thakur", "hi": "मैथिली ठाकुर" } },
+  { "id": "kalpana", "name": { "en": "Kalpana Patowary", "hi": "कल्पना पटवारी" } },
+  { "id": "chandan", "name": { "en": "Chandan Tiwari", "hi": "चंदन तिवारी" } },
+  { "id": "manoj", "name": { "en": "Manoj Tiwari", "hi": "मनोज तिवारी" } }
+ ],
+ "songs": [
+  { "youtubeId": "j74EcjyN1WQ", "singer": "sharda", "channel": "T-Series Bhakti Sagar", "title": { "en": "Ho Deenanath", "hi": "हो दीनानाथ" } },
+  { "youtubeId": "KEefFWJzpkg", "singer": "sharda", "channel": "T-Series Hamaar Bhojpuri", "jukebox": true, "title": { "en": "Chhathi Maiya: best of Sharda Sinha", "hi": "छठी मईया: शारदा सिन्हा के छठ गीत" } },
+  { "youtubeId": "sTucQoc2I8c", "singer": "sharda", "channel": "T-Series Hamaar Bhojpuri", "jukebox": true, "title": { "en": "Supwa Lela O Babua", "hi": "सुपवा लेला ओ बबुआ" } },
+
+  { "youtubeId": "8MzoVsjL4QU", "singer": "anuradha", "channel": "T-Series Bhakti Sagar", "title": { "en": "Uga Hai Suraj Dev", "hi": "उग हे सूरज देव" } },
+  { "youtubeId": "CZHbNj84U4o", "singer": "anuradha", "channel": "T-Series Bhakti Sagar", "title": { "en": "Aadit Manaila", "hi": "आदित मनाईला" } },
+  { "youtubeId": "sp_UdM7Aqfc", "singer": "anuradha", "channel": "T-Series Bhakti Sagar", "title": { "en": "Aragh Ke Ber", "hi": "अरघ के बेर" } },
+  { "youtubeId": "Eyq7vfxu4iA", "singer": "anuradha", "channel": "T-Series Bhakti Sagar", "title": { "en": "Kaanch Hi Baans Ke Bahangiya", "hi": "काँच ही बाँस के बहँगिया" } },
+  { "youtubeId": "DK19Opx-M6o", "singer": "anuradha", "channel": "T-Series Bhakti Sagar", "jukebox": true, "title": { "en": "Best of Anuradha Paudwal Chhath geet", "hi": "अनुराधा पौडवाल के छठ गीत" } },
+
+  { "youtubeId": "fwX2g9jjo1o", "singer": "maithili", "channel": "Maithili Thakur", "title": { "en": "Sona Satkuniya Ho Dinanath", "hi": "सोना सटकुनिया हो दीनानाथ" } },
+  { "youtubeId": "S80_EEIeOXI", "singer": "maithili", "channel": "Maithili Thakur", "title": { "en": "Patna Ke Ghat Par", "hi": "पटना के घाट पर" } },
+  { "youtubeId": "VN0-C_22y4s", "singer": "maithili", "channel": "Maithili Thakur", "title": { "en": "Kerwa Ke Paat Par", "hi": "केरवा के पात पर" } },
+  { "youtubeId": "i0kSHQFQoeE", "singer": "maithili", "channel": "Maithili Thakur", "title": { "en": "Chadhte Katikwa Suruj Baba", "hi": "चढ़ते कतिकवा सुरुज बाबा" } },
+  { "youtubeId": "TjH3jsybNJA", "singer": "maithili", "channel": "Maithili Thakur", "title": { "en": "Uga Ho Surujdev", "hi": "उगा हो सुरुजदेव" } },
+  { "youtubeId": "3zXHOSLia78", "singer": "maithili", "channel": "Maithili Thakur", "jukebox": true, "title": { "en": "Chhath geet: 1-hour jukebox", "hi": "छठ गीत: 1 घंटे का जूकबॉक्स" } },
+
+  { "youtubeId": "21CUPJCqx7g", "singer": "kalpana", "channel": "Kalpana Patowary - Topic", "title": { "en": "Kath Ke Re Naiyiya", "hi": "काठ के रे नइया" } },
+  { "youtubeId": "qVCW7PhpcNA", "singer": "kalpana", "channel": "Kalpana Patowary - Topic", "title": { "en": "Uga Hai Suruj Dev", "hi": "उगा है सुरुज देव" } },
+  { "youtubeId": "_x8bosq6kUM", "singer": "kalpana", "channel": "Kalpana Patowary - Topic", "title": { "en": "Chhath Vrat", "hi": "छठ व्रत" } },
+
+  { "youtubeId": "IFfMWCXC_3c", "singer": "chandan", "channel": "Chandan Tiwari {Purabiyataan}", "title": { "en": "Sakal Jagtarini He Chhathi Mata", "hi": "सकल जगतारिणी हे छठी माता" } },
+  { "youtubeId": "bUehESu-sLU", "singer": "chandan", "channel": "Chandan Tiwari {Purabiyataan}", "title": { "en": "Nadiya Kinare Dhenu Gaiya", "hi": "नदिया किनारे धेनु गइया" } },
+  { "youtubeId": "qq4CPAx1HL0", "singer": "chandan", "channel": "Chandan Tiwari {Purabiyataan}", "title": { "en": "Hathe Satkuliya Ho Deenanath", "hi": "हाथे सटकुलिया हो दीनानाथ" } },
+  { "youtubeId": "uNZshK_VRjA", "singer": "chandan", "channel": "Chandan Tiwari {Purabiyataan}", "title": { "en": "Kaanch He Baans Ke Bahangiya (live)", "hi": "काँच हे बाँस के बहँगिया (लाइव)" } },
+  { "youtubeId": "0I3B00VomXs", "singer": "chandan", "channel": "Chandan Tiwari {Purabiyataan}", "jukebox": true, "title": { "en": "Six songs of Chhath Mahaparv", "hi": "छठ महापर्व के छह गीत" } },
+
+  { "youtubeId": "hXSxpLP4X68", "singer": "manoj", "channel": "T-Series Hamaar Bhojpuri", "jukebox": true, "title": { "en": "Saat Hi Ghoda Ke", "hi": "सात ही घोड़ा के" } },
+  { "youtubeId": "hjGtWpbasrk", "singer": "manoj", "channel": "T-Series Hamaar Bhojpuri", "jukebox": true, "title": { "en": "Chhath Maharani", "hi": "छठ महारानी" } }
+ ]
+}

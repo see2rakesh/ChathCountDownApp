@@ -70,6 +70,7 @@ function RootStack() {
       <Stack.Screen name="settings" options={{ title: t('settings'), presentation: 'modal', headerRight: () => <CloseButton /> }} />
       <Stack.Screen name="profile" options={{ title: t('profile'), presentation: 'modal', headerRight: () => <CloseButton /> }} />
       <Stack.Screen name="live" options={{ title: t('live') }} />
+      <Stack.Screen name="katha" options={{ title: t('kathaTitle') }} />
     </Stack>
   );
 }

@@ -1,3 +1,4 @@
+import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
@@ -13,6 +14,7 @@ import { useNow } from '@/lib/use-now';
 export default function RitualsScreen() {
   const { settings, t } = useSettings();
   const lang = settings.lang;
+  const router = useRouter();
   const now = useNow(60_000);
   const edition = currentEdition(now);
   const district = getDistrict(settings.districtId);
@@ -34,7 +36,12 @@ export default function RitualsScreen() {
       </View>
       <Small>ⓘ {t('sunNote')}</Small>
 
-      <H2 style={{ marginTop: S.sm }}>{t('fourDays')}</H2>
+      <View style={[styles.allHead, { marginTop: S.sm }]}>
+        <H2>{t('fourDays')}</H2>
+        <Pressable accessibilityRole="link" onPress={() => router.push('/katha')} hitSlop={8}>
+          <Text style={styles.link}>📖 {t('kathaLink')} →</Text>
+        </Pressable>
+      </View>
       {edition.rituals.map((r) => {
         const sun = sunTimes(r.date, district);
         const isToday = r.date === today;
