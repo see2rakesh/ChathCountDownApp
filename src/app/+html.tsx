@@ -18,7 +18,7 @@ export default function Root({ children }: PropsWithChildren) {
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
-        <title>Chhath Countdown · छठ काउंटडाउन</title>
+        <title>Indian Festival Countdown · भारतीय त्योहार काउंटडाउन</title>
         <meta name="description" content="Chhath Mahaparv 2026 countdown, arghya timings for every district in India and cities worldwide and a daily Sharda Sinha Chhath geet." />
         <meta name="theme-color" content="#D9480F" />
         <link rel="manifest" href={`${BASE}/manifest.webmanifest`} />

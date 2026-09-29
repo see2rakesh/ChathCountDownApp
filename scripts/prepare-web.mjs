@@ -10,7 +10,7 @@ writeFileSync('public/live.json', readFileSync('src/data/live.json'));
 writeFileSync('public/playlist.json', readFileSync('src/data/playlist.json'));
 
 const manifest = {
-  name: 'Chhath Countdown · छठ काउंटडाउन',
+  name: 'Indian Festival Countdown · भारतीय त्योहार काउंटडाउन',
   short_name: 'Chhath',
   description: app.description,
   lang: 'hi',

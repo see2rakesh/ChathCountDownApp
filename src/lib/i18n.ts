@@ -1,7 +1,7 @@
 export type Lang = 'hi' | 'en';
 
 const STRINGS = {
-  appName: { en: 'Chhath Countdown', hi: 'छठ काउंटडाउन' },
+  appName: { en: 'Indian Festival Countdown', hi: 'भारतीय त्योहार काउंटडाउन' },
   tabHome: { en: 'Home', hi: 'होम' },
   tabRituals: { en: 'Rituals', hi: 'अनुष्ठान' },
   tabGeet: { en: 'Geet', hi: 'गीत' },

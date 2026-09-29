@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Chhath Countdown",
+    "name": "Indian Festival Countdown",
     "slug": "chhath-countdown",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -33,8 +33,8 @@
     "web": {
       "output": "static",
       "favicon": "./assets/images/favicon.png",
-      "name": "Chhath Countdown",
-      "shortName": "Chhath",
+      "name": "Indian Festival Countdown",
+      "shortName": "Festivals",
       "themeColor": "#D9480F",
       "backgroundColor": "#FFF7EC",
       "lang": "hi"
