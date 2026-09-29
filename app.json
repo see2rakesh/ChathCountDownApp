@@ -8,11 +8,11 @@
     "scheme": "chhathcountdown",
     "userInterfaceStyle": "light",
     "ios": {
-      "bundleIdentifier": "com.see2rakesh.chhathcountdown",
+      "bundleIdentifier": "com.see2rakesh.indianfestivalcountdown",
       "supportsTablet": true
     },
     "android": {
-      "package": "com.see2rakesh.chhathcountdown",
+      "package": "com.see2rakesh.indianfestivalcountdown",
       "versionCode": 1,
       "adaptiveIcon": {
         "backgroundColor": "#F0821E",
